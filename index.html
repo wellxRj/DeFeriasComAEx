@@ -8,11 +8,12 @@
     
 </head>
 
-<body>
+<body id="body">
     
 
         
         <h1 class="vermelho">QUE SAUDADES DA MINHA EX</h1>
+        <img class="foto" src="./exdorobsu.png"/>
         <p>A TRÁGICA HISTÓRIA de um menino q queria sua ex, mas que só sabe reclamar e ser mal amado</p>
 
     
@@ -22,16 +23,50 @@
     
     
         <img class="foto" src="./robsu.jpg" alt="no quieres" />
+
+        <h3 class="vermelho">Abigos do Robinho</h3>
+        <p>Ferrugem</p>
+        <img class="foto2" src="./ferrugem.jpg"/>
+        
+        <p>Houdini</p>
+        <img class="foto2" src="./houdini.jpg"/>
+        <p>Sosdeep</p>
+        <img class="foto2" src="./deep.jpg"/>
+
+        <p>Judeo</p>
+        <img class="foto2" src="./judeo.jpg"/>
+
+        <p>LokDok</p>
+        <img class="foto2" src="./lokdok.jpg"/>
+
+        <p>MacacaPreta</p>
+        <img class="foto2" src="./macacapreta.jpg"/>
+    
+
+
     
         <br/>
     
     
         <a href="https://www.twitch.tv/tobiasfate">n tem nada</a>
-    
+
+        <iframe id="video" width="1" height="1"  src="https://www.youtube.com/embed/8ZDzjgJE8DM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        
 
 
+        <script>
+            const body = document.getElementById('body')
+            const video = document.getElementById('video')
+        
+            let times = 0
+            body.addEventListener( 'click' , () => {
+                if(times == 0){
+                video.src += '?autoplay=1';
+                times = 1;
+                }
+        })
+        </script>
 </body>
-
 
 
 </html>
